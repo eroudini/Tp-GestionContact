@@ -11,6 +11,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Data
+@Table(name = "utilisateur")
 public class User {
 
     @Id

@@ -11,7 +11,7 @@ public class ContactService {
     @Autowired
     private ContactRepository contactRepository;
 
-    public List<Contact> getAllContacts(){
+    public List<Contact> getAllContacts() {
         return contactRepository.findAll();
     }
 
@@ -19,7 +19,7 @@ public class ContactService {
         return contactRepository.findById(id).orElse(null);
     }
 
-    public Contact createContact(Contact contact){
+    public Contact addContact(Contact contact) {
         return contactRepository.save(contact);
     }
 

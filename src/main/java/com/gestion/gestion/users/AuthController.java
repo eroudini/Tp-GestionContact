@@ -17,4 +17,6 @@ public class AuthController {
     public User registerUser(@RequestBody User user){
         return userService.registerUser(user);
     }
+
+
 }
